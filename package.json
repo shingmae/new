@@ -8,7 +8,7 @@
     "compile": "sass --watch frontend/src/scss:src/assets/css",
     "start": "node server.js",
     "server": "nodemon api/index",
-    "build": "cd client && npm install && npm run build"
+    "build": "cd frontend && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
