@@ -28,7 +28,7 @@ app.use('/images', express.static(path.join(__dirname, '/images')));
 const app = express();
 app.use(
   cors({
-    origin: ['https://deetsauce.vercel.app'],
+    origin: ['new-frontend-eta-one.vercel.app'],
     methods: ['POST', 'GET'],
     credentials: true,
   })
