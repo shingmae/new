@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "sass --watch frontend/src/scss:src/assets/css",
-    "start": "node server.js",
+    "start": "cd api && npm install && nodemon api/index",
     "server": "nodemon api/index",
     "build": "cd frontend && npm install && npm run build"
   },
