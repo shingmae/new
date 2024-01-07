@@ -1,5 +1,5 @@
 const express = require('express');
-const app = express();
+
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const multer = require('multer');
@@ -24,6 +24,15 @@ app.use('/images', express.static(path.join(__dirname, '/images')));
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, 'frontend/public', 'index.html'));
 // });
+
+const app = express();
+app.use(
+  cors({
+    origin: ['https://deetsauce.vercel.app'],
+    methods: ['POST', 'GET'],
+    credentials: true,
+  })
+);
 
 mongoose
   .connect(process.env.CONNECT_URL, {
