@@ -1,0 +1,9 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+h3 {
+  font-family: 'Source Serif 4', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black,
+    2px 2px 3px rgb(29, 28, 28);
+  color: white;
+}

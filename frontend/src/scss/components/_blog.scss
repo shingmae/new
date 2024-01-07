@@ -1,0 +1,139 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.blog {
+  margin-top: 50px;
+}
+.blog .boxItems {
+  padding: 1rem;
+  transition: 0.5s;
+}
+.blog .boxItems:hover {
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 20%);
+  background: rgb(128, 128, 128, 0.09);
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+.blog img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  z-index: 0;
+}
+.blog .icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.blog a {
+  color: black;
+}
+.blog .tag a {
+  text-decoration: none;
+  color: blue;
+  opacity: 0.7;
+}
+
+.blog .tag {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.blog h4 {
+  font-family: 'Righteous', sans-serif;
+  color: $primary-dark;
+  font-weight: 500;
+}
+.blog p {
+  color: #999;
+  font-weight: 400;
+  margin: 20px 0;
+  font-size: 17px;
+  line-height: 25px;
+}
+.blog .date {
+  display: flex;
+  align-items: center;
+}
+.blog .date label {
+  display: block;
+  margin-right: 20px;
+}
+
+// .blog {
+//   margin: 50px 0;
+// }
+
+// .blog .blogItems {
+//   transition: 0.5s;
+// }
+
+// .blog .boxItems:hover {
+//   box-shadow: 0 2px 6px rgb(0 0 0 /10%);
+//   cursor: pointer;
+//   transform: translateY((-5px));
+//   transition: 0.5s;
+// }
+
+// .grid3 {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   grid-gap: 12px;
+// }
+
+// .blog img {
+//   width: 100%;
+//   height: 250px;
+//   object-fit: cover;
+//   margin-bottom: 20px;
+// }
+
+// .blog .icon {
+//   margin-right: 10px;
+//   font-size: 20px;
+// }
+
+// .blog .tag a {
+//   color: $secondary;
+//   opacity: 0.7;
+// }
+
+// .blog .tag {
+//   margin-bottom: 20px;
+//   display: flex;
+//   align-items: center;
+// }
+
+// .blog h4 {
+//   font-weight: bold;
+//   color: $primary-dark;
+// }
+
+// .blog p {
+//   color: rgb(121, 120, 120);
+//   font-weight: 400;
+//   padding: 0.5rem;
+//   margin: 20px 0;
+//   font-size: 17px;
+//   line-height: 25px;
+// }
+
+// .blog .date {
+//   display: flex;
+//   align-items: center;
+// }
+// .blog .date .label {
+//   display: block;
+//   margin-right: 20px;
+// }
+
+// .link {
+//   color: #000;
+// }
+
+// .container {
+//   max-width: 95%;
+//   margin: auto;
+// }

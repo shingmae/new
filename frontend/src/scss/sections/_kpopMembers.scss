@@ -1,0 +1,108 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.desc {
+  font-family: 'Righteous', sans-serif;
+}
+
+.description-title {
+  position: relative;
+  padding: 1rem 0;
+
+  &:h3 {
+    font-family: 'Righteous', sans-serif;
+  }
+
+  &__content {
+    p,
+    li {
+      list-style: none;
+      font-family: 'Righteous', sans-serif;
+      text-indent: 0px;
+      @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+      }
+    }
+
+    i {
+      padding-right: 1rem;
+
+      &:hover {
+        cursor: pointer;
+        color: $primary-hover-light;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 5rem;
+    }
+    ul {
+      width: 70%;
+      list-style: none;
+      font-size: 1rem;
+      text-align: center;
+      position: relative;
+      box-shadow: -4px 5px 5px $gray-500;
+      border-radius: 0.5rem;
+      padding: 2rem 2rem 2rem 2rem;
+      background-color: $primary-light;
+      letter-spacing: 0.5px;
+
+      @include media-breakpoint-up(xl) {
+        width: 80%;
+        font-size: 0.8rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: 80%;
+        font-size: 0.8rem;
+      }
+
+      @include media-breakpoint-up(md) {
+        width: 80%;
+        font-size: 0.8rem;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 0.82rem;
+        width: 80vw;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background: $primary-hover-light;
+        transition: 1s;
+      }
+
+      ol {
+        border-radius: 0.3rem;
+        li {
+          text-align: left;
+        }
+      }
+
+      li {
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        a {
+          text-decoration: none;
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+.kpop_name {
+  text-shadow: -0.5px 0 black, 0 1px black, 0.5px 0 black, 0 -0.5px black,
+    2px 2px 4px $gray-600;
+  color: $secondary;
+  padding: 0;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: bolder;
+  text-indent: 0px;
+}
+
+.bias {
+  text-indent: 0px;
+}

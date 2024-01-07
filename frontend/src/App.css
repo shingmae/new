@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(
+      180deg,
+      rgba(248, 249, 250, 0.1),
+      rgba(32, 201, 192, 0.55),
+      rgba(144, 71, 238, 0.5)
+    ),
+    url('../public/picture-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

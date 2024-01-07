@@ -1,0 +1,19 @@
+{
+  "name": "deetsauce",
+  "homepage": "http://deetsauce.com/",
+  "version": "1.0.0",
+  "description": "react blog site",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch frontend/src/scss:src/assets/css",
+    "start": "react-scripts start",
+    "server": "nodemon api/index",
+    "build": "react-scripts build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^6.8.4",
+    "nodemon": "^2.0.20"
+  }
+}

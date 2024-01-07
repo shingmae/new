@@ -1,0 +1,64 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+footer {
+  z-index: 0;
+}
+
+.foot-2,
+.foot-1 {
+  width: 100%;
+  bottom: 0;
+  padding: 1rem;
+  font-family: 'Righteous', sans-serif;
+  color: $white;
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  img {
+    height: 1.5rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 0.8rem;
+  }
+  .about-footer {
+    padding-left: 3rem;
+    opacity: 0.9;
+
+    a {
+      text-decoration: none;
+    }
+
+    &_1 {
+      padding-left: 3rem;
+      opacity: 0.8;
+    }
+  }
+
+  .end-footer {
+    text-align: center;
+  }
+}
+
+.foot-1 {
+  @include gradient;
+}
+.foot-2 {
+  background: $gray-700;
+}
+
+.foot span {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  @include media-breakpoint-down(sm) {
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+  }
+}

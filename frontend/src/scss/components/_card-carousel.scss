@@ -1,0 +1,119 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.wrapper {
+  width: 100%;
+  background-color: #8080801a;
+  padding-top: 3rem;
+}
+
+.wrapper .carousel-card {
+  max-width: 1200px;
+  margin: auto;
+  z-index: 2;
+}
+
+.item {
+  height: 200px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-right: 0.7rem;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  // text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+  font-weight: 600;
+  border-radius: 4px;
+  background-color: $primary-dark;
+  border: 1px solid black;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+
+  p {
+    transform: translateY(20px);
+    margin-left: auto;
+    margin-right: auto;
+    overflow-wrap: break-word;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 1rem;
+    overflow-wrap: break-word;
+  }
+  &:hover {
+    background-color: #105754;
+  }
+}
+
+.carousel-card .card-1 {
+  background: url('https://images.pexels.com/photos/2997958/pexels-photo-2997958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-card .card-2 {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/181119_Acara_Puncak_Road_to_Shopee_12.12_Birthday_Sale%2C_Special_Performance_dari_BlackPink_%2818%29.jpg/1200px-181119_Acara_Puncak_Road_to_Shopee_12.12_Birthday_Sale%2C_Special_Performance_dari_BlackPink_%2818%29.jpg?20181119214938');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-card .card-3 {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/7/7c/Astro-e1454913709325.jpg?20160407215212');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-card .card-4 {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/f/f4/180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_02.jpg?20180824003545');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-card .card-5 {
+  background: url('https://www.generasia.com/w/images/thumb/2/21/iKON_-_i_DECIDE_promo.jpg/825px-iKON_-_i_DECIDE_promo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.carousel-card .card-6 {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Red_Velvet_at_Dream_Concert_on_May_18%2C_2019.png/1200px-Red_Velvet_at_Dream_Concert_on_May_18%2C_2019.png?20190519200816');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.carousel-card .card-7 {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/e/eb/Itzy_at_Cultwo_Show_on_March_16%2C_2020_%283%29.png?20200816044408');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// TRAVEL CARDS
+.carousel-card .card-t-1 {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/e/eb/Itzy_at_Cultwo_Show_on_March_16%2C_2020_%283%29.png?20200816044408');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.owl-nav {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+.owl-next {
+  margin-left: 2rem;
+}
+.owl-prev {
+  margin-right: 2rem;
+}
+
+.owl-theme {
+  z-index: -1;
+}

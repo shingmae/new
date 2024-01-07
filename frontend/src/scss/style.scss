@@ -1,0 +1,19 @@
+@use './custom';
+
+//IMPORT COMPONENTS
+@use './components/mixins';
+@use './components/buttons';
+@use './components/card-carousel';
+@use './components/categories';
+@use './components/blog';
+
+//IMPORT SECTIONS
+@use './sections/navbar';
+@use './sections/intro-section';
+@use './sections/subjects';
+@use './sections/modal-contact';
+@use './sections/articles';
+@use './sections/footer';
+@use './sections/quiz';
+@use './sections/details';
+@use './sections/kpopMembers';
