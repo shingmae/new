@@ -5,10 +5,11 @@
   "description": "react blog site",
   "main": "index.js",
   "scripts": {
-    "compile": "sass --watch frontend/src/scss:src/assets/css",
-    "start": "cd api && npm install && nodemon api/index",
-    "server": "nodemon api/index",
-    "build": "cd frontend && npm install && npm run build"
+    "install-all": "cd api && npm install && cd ../frontend && npm install",
+    "build-client": "cd frontend && npm run build",
+    "start-api": "cd api && npm start",
+    "start-frontend": "cd frontend && npm start",
+    "deploy": "npm run install-all && npm run build-frontend && npm start-api"
   },
   "author": "",
   "license": "ISC",

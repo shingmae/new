@@ -30,6 +30,13 @@
     "sweetalert2": "^11.6.16",
     "web-vitals": "^2.1.4"
   },
+  "scripts": {
+    "compile": "sass --watch src/scss:src/assets/css",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
