@@ -6,9 +6,9 @@
   "main": "index.js",
   "scripts": {
     "compile": "sass --watch frontend/src/scss:src/assets/css",
-    "start": "react-scripts start",
+    "start": "node server.js",
     "server": "nodemon api/index",
-    "build": "react-scripts build"
+    "build": "cd client && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
