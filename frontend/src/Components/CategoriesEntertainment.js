@@ -87,24 +87,28 @@ export default function CategoriesEntertainment() {
       <section className="category">
         <div className="content">
           <Slider {...settings}>
-            {category.map((item) => (
-              <Link to="/" style={{ textDecoration: 'none' }}>
-                <div className="boxs" key={item._id}>
-                  <div className="box">
-                    <img src={item.photo} alt={''} />
+            {Array.isArray(category) &&
+              category.map((item) => (
+                // your existing code...
+                <Link to="/" style={{ textDecoration: 'none' }}>
+                  <div className="boxs" key={item._id}>
+                    <div className="box">
+                      <img src={item.photo} alt={''} />
 
-                    <div className="overlay">
-                      <div>
-                        <h4>{item.name}</h4>
-                      </div>
-                      {/* <div>
+                      <div className="overlay">
+                        <div>
+                          <h4>{item.name}</h4>
+                        </div>
+                        {/* <div>
                         <p>{item.title}</p>
                       </div> */}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
+            {/* {category.map((item) => (
+            ))} */}
           </Slider>
         </div>
       </section>
