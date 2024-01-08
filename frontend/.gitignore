@@ -10,6 +10,7 @@
 
 # production
 /build
+/src/CategoriesEntertainment.js
 
 # misc
 .DS_Store
